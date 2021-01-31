@@ -18,6 +18,10 @@ html,body {
     margin: 0;
 }
 
+body *{
+    transition: 0.3s;
+}
+
 h1,h2,h3,h4,h5,h6, strong {
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
@@ -124,6 +128,10 @@ h6 {
     justify-content: space-between;
     align-items: center;
     background-color: var(--mainColor);
+}
+
+#navigation a {
+    color: var(--mainText);
 }
 
 .dots-wrapper {
@@ -364,12 +372,15 @@ h6 {
     border: none;
 }
 
+
+
 /* media queries */
 @media screen and (max-width:1200px){
     .main-container{
         width:95%
     }
 }
+
 
 
 @media screen and (max-width:800px){

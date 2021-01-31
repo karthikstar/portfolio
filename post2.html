@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="default.css">
+
+    <style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+  
+    <title>Pneumonia Detection Project</title>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <a href="index.html">
+            <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+            </div>
+        </a>
+        <ul id="navigation">
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <br>
+        <!-- <div class="img-container">
+            <img src="images/smartbrain.PNG" alt="">
+        </div> -->
+        <h3>Pneumonia Detection Project</h3>
+
+        <h3><a target="_blank" href="https://colab.research.google.com/drive/1cjfULgWB1573jeYUnLB4q0E-fpccMJn2?usp=sharing">https://colab.research.google.com/drive/1cjfULgWB1573jeYUnLB4q0E-fpccMJn2?usp=sharing</a></h3>
+
+		<p>The COVID-19 pandemic has disrupted the way of life for billions of people around the world. COVID-19 pneumonia is a serious illness that can be deadly. Given the situation above, I felt it was apt to work on pneumonia detection which could help doctors to more accurately detect pneumonia from chest x-ray images.
+
+        <br>
+        <br>
+        Thus, I successfully trained a model to be able to detect pneumonia in Chest X-Ray images, with an accuracy of 94.6%. 
+        
+        <br>
+        <br>
+        I did transfer learning using a famous Imagenet Model known as InceptionV3. 
+		
+        </p>
+		<h5>Technologies:</h5>
+		<ul>
+            <li>- TensorflowJS</li>
+			<li>- CNNs</li>
+			<li>- Transfer Learning Using InceptionV3</li>
+			<li>- Kaggle Dataset</li>
+
+        </ul>
+        <h5></h5>
+
+        <h5>Prediction Using Trained Model</h5>
+		<div class="img-container">
+			<img src="images/pneumonia_detection.PNG">
+		</div>
+
+		<h5>Correctly Detecting Presence Of Pneumonia</h5>
+		<div class="img-container">
+			<img src="images/pneumonia_present.PNG">
+		</div>
+
+		<h5>Correctly Detecting Normal Chest X-Ray</h5>
+		<div class="img-container">
+			<img src="images/pneumonia_normal.PNG">
+        </div>
+        
+        <h5>Model Accuracy Of 94.6%</h5>
+		<div class="img-container">
+			<img src="images/pneumonia_accuracy.PNG">
+        </div>
+    </div>
+
+    
+</body>
+</html>

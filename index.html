@@ -6,9 +6,11 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b63bdfa062.js" crossorigin="anonymous"></script>
     <!-- css -->
     <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="">
     <title>Elangovan Karthikeyan</title>
 </head>
 <body>
@@ -36,10 +38,10 @@
                     <img id="profile_pic" src="images/face.jpg" alt="">
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode = "light" id="light-mode" class="theme-dot"></div>
+                        <div id="blue-mode" data-mode="blue" class="theme-dot"></div>
+                        <div id="green-mode"  data-mode="green" class="theme-dot"></div>
+                        <div id="purple-mode" data-mode="purple" class="theme-dot"></div>
 
                     </div>
                     <p id="settings-note">These settings will be saved for <br> your next visit</p>
@@ -73,12 +75,12 @@
             <div class="about-wrapper">
                 <div class="about-me">
                     <h4>More about me</h4>
-                    <p>I build projects</p>
-                    <p>They are very amazing as i did them mysealf.</p>
+                    <p>As a curious individual, I have exposed myself to various technologies such as web development, both front-end and back-end, and am gaining competency in this rapidly evolving space.</p>
+                    <p>Having always regarded AI and machine learning as cool topics, I have been gaining some interest in this field, in particular, deep learning.</p>
                 
                     <hr>
-                    <h4>TOP EXPERTISE</h4>
-                    <p>Developer with primary focus on Web Development and Machine Learning: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+                    <h4>PRIMARY INTERESTS</h4>
+                    <p>Developer who is gaining proficiency in Web Development and Machine Learning</p>
 
                     <div id="skills">
                         <ul>
@@ -86,20 +88,27 @@
                             <li>Deep Learning</li>
                             <li>Data Science</li>
                             <li>TensorflowJS</li>
+                            <li>UI/UX Design (Figma)</li>
                         </ul>
                         <ul>
                             <li>HTML/CSS</li>
                             <li>Javascript</li>
                             <li>ReactJS</li>
                             <li>MongoDB</li>
+                            <li>PostgreSQL</li>
 
                         </ul>
                     </div>
                 </div>
                 <div class="social-links">
                         <!-- <img id="social_img" src="images/follow.jpg"> -->
-                    <h3>Find me on LinkedIn</h3>
-                    <a target="_blank" href="#">LinkedIn:</a>
+
+                    <h3>Find My Work On Github</h3>
+                    <a target="_blank" href="https://github.com/karthikstar"><i class="fab fa-github fa-3x"></i>
+
+                    </a>
+                    <h3>Find Me On LinkedIn</h3>
+                    <a target="_blank" href="https://www.linkedin.com/in/elangovan-karthikeyan-b3675a147/"><i class="fab fa-linkedin-in fa-3x"></i></a>
                     
                 </div>
 
@@ -117,11 +126,11 @@
                     <div class="post">
                         <img class="thumbnail" src="images/smartbrain.PNG" alt="">
                         <div class="post-preview">
-                            <h6 class="post-title">Smartbrain App</h6>
+                            <h6 class="post-title">Smartbrain Full-Stack App</h6>
                             <p class="post-intro">
                                 Full stack app connected to a face recognition API which detects faces in images 
                             </p>
-                            <a href="#">Read More</a>
+                            <a href="post.html">Read More</a>
                         </div>
     
                     </div>
@@ -135,7 +144,7 @@
                             <p class="post-intro">
                                 Trained a model that is able to detect pneumonia in Chest X-Ray images
                             </p>
-                            <a href="#">Read More</a>
+                            <a href="post2.html">Read More</a>
     
                         </div>
                     </div>
@@ -149,7 +158,7 @@
                             <p class="post-intro">
                                 Designed a platform which allows for real-time conversations
                             </p>
-                            <a href="#">Read More</a>
+                            <a href="post3.html">Read More</a>
     
                         </div>
                     </div>
@@ -182,6 +191,6 @@
         </div>
     </section>
     
-
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
